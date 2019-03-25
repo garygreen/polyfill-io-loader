@@ -1,0 +1,12 @@
+{
+  "name": "polyfill-io-loader",
+  "version": "1.0.0",
+  "description": "Minimal polyfill.io loader for Webpack",
+  "main": "index.js",
+  "homepage": "https://github.com/garygreen/polyfill-io-loader",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gary Green",
+  "license": "ISC"
+}
