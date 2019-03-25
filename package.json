@@ -8,5 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gary Green",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "polyfill-library": "^3.31.1"
+  }
 }
