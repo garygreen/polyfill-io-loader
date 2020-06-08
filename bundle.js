@@ -30,7 +30,7 @@ function loadPolyfills(loadedCallback)
         return loadedCallback();
     }
 
-    loadScript(url + '?features=' + polyfills.join(','), loadedCallback);
+    loadScript(url + '?features=' + polyfills.join(',') + '&flags=always', loadedCallback);
 }
 
 export default loadPolyfills;
