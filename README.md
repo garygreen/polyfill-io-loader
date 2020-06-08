@@ -44,7 +44,7 @@ import loadPolyfills from 'polyfill-io-loader!?Promise,fetch,Object.assign';
 If the browser supports `Promise` but not `fetch` or `Object.assign`, the following request will be made to polyfill.io:
 
 ```
-https://polyfill.io/v3/polyfill.min.js?features=fetch,Object.assign
+https://polyfill.io/v3/polyfill.min.js?features=fetch,Object.assign&flags=always
 ```
 
 ## Contributing
