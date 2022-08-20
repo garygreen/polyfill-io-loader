@@ -22,6 +22,9 @@ import loadPolyfills from 'polyfill-io-loader!?Promise,NodeList.prototype.forEac
 loadPolyfills(function() {
     // All polyfills have been loaded.
     // Initialise your app here.
+    //
+    // For example:
+    // ReactDOM.render(<ClientRoot />, document.getElementById('root'));
 });
 ```
 
@@ -46,6 +49,12 @@ If the browser supports `Promise` but not `fetch` or `Object.assign`, the follow
 ```
 https://polyfill.io/v3/polyfill.min.js?features=fetch,Object.assign&flags=always
 ```
+
+## How to know which polyfills to use?
+
+1. create your production client bundle (something like: npm run build)
+2. run `npx create-polyfill-service-url analyse --file dist/main.5cac0bed.js` <- replace the filename with the one provided by the bundler in the previous step. This will analyze your production bundle and create a list of polyfills according to your browserslist settings.
+3. if the list of polyfill seems long, check the log of the `create-polyfill-service-url`. If you see something like `'we do not know if and_qq 12.12.0 supports fetch'`, update your browserlist to exclude those browsers.
 
 ## Contributing
 
